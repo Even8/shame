@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "removeComments": false, /*不输出注释*/
+    "sourceMap": true,/*生成目标文件 inline sourceMap*/
+    "declaration": true,/*生成响应的 d.ts文件*/
+    "strict": true,/*启用所有严格类型检查选项*/
+    "strictFunctionTypes": false,/*不润徐函数参数双向协变*/
+    "moduleResolution": "node",/*指定模块解析器*/
+    "target": "es2015",/**/
+    "outDir": "build",/*指定文件的输出目录*/
+    "lib":[
+      "ES2015.Promise",
+      "ESNext",
+      "DOM",
+      "DOM.Iterable",
+      "ScriptHost",
+    ]
+  },
+  "include": ["./src/index.ts"]/*编译器需要编译的文件或目录，支持通配符*/
+}
