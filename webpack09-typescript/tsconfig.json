@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "removeComments": false, /* 不输出注释 */
+    "sourceMap": false,  /* 生成目标文件的 inline sourceMap */
+    "declaration": false, /* 生成相应的 '.d.ts' 文件 */
+    "strict": true,  /* 启用所有严格类型检查选项 */
+    "strictFunctionTypes": false,/* 不允许函数参数双向协变 */
+    "moduleResolution": "node", /* 指定模块解析策略: 'node' (Node.js) or 'classic' (TypeScript pre-1.6) */
+    "target": "ES5",
+    "outDir": "./src/js", /* 指定输入文件的根目录(用于输出目录结构), 使用 --outDir 控制输出目录结构 */
+    "noUnusedLocals":false,
+    "lib": [  /* 指定要包含在编译中的库文件, 即声明文件, es5 默认 "dom", "es5", "scripthost" */
+      // "allowJs": true,                       /* 允许编译 js 文件 (js/jsx) */
+      "ES5",
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": ["./src/ts/*"]/* 编译器需要编译的文 件或目录, 支持通配符 */
+}

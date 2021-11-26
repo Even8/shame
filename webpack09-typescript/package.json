@@ -1,0 +1,23 @@
+{
+  "name": "ts04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=sit webpack-dev-server",
+    "sit": "cross-env NODE_ENV=sit webpack",
+    "uat": "cross-env NODE_ENV=uat webpack",
+    "pat": "cross-env NODE_ENV=pat webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "webpack": "^5.61.0"
+  }
+}
