@@ -3,12 +3,11 @@ var gulp = require('gulp')
 // 开启服务器插件
 const connect = require('gulp-connect');
 // 合并js文件插件
-// const concat =  require('gulp-concat');
+const concat =  require('gulp-concat');
 // 编译代码插件
-// const babel =   require('gulp-babel');
+const babel =   require('gulp-babel');
 // 重新命名插件
-// const rename =  require('gulp-rename');
-
+const rename =  require('gulp-rename');
 // 压缩插件
 var uglify = require('gulp-uglify')
 
@@ -23,11 +22,19 @@ gulp.task('webserver', () =>
 // 压缩 js 文件
 // 在命令行使用 gulp script 启动此任务
 gulp.task('script', function() {
-    // 1. 找到文件
+    // 入口文件
     gulp.src('js/*.js')
-    // 2. 压缩文件
+        // 合并为 luckyDraw.js  
+        .pipe(concat('luckyDraw.js'))  
+        // 编译为 ES5 
+        .pipe(babel({                    
+            presets: ['env']
+        }))       
+        // 压缩文件
         .pipe(uglify())
-    // 3. 另存压缩后的文件
+        // 重命名
+        .pipe(rename({suffix: '.min'})) 
+        // 另存压缩后的文件
         .pipe(gulp.dest('dist/js'))
 })
 
