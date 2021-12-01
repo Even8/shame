@@ -1,5 +1,7 @@
+// **切记node版本为v10.15.0**
+
 // 获取 gulp
-var gulp = require('gulp')
+var gulp = require('gulp');
 // 开启服务器插件
 const connect = require('gulp-connect');
 // 合并js文件插件
@@ -23,13 +25,13 @@ gulp.task('webserver', () =>
 // 在命令行使用 gulp script 启动此任务
 gulp.task('script', function() {
     // 入口文件
-    gulp.src('js/*.js')
+    return gulp.src('js/*.js')
         // 合并为 luckyDraw.js  
-        .pipe(concat('luckyDraw.js'))  
+        .pipe(concat('all.js'))  
         // 编译为 ES5 
-        .pipe(babel({                    
+        .pipe(babel({
             presets: ['env']
-        }))       
+        }))
         // 压缩文件
         .pipe(uglify())
         // 重命名
@@ -48,3 +50,8 @@ gulp.task('auto', function () {
 // 使用 gulp.task('default') 定义默认任务
 // 在命令行使用 gulp 启动 script 任务和 auto 任务
 gulp.task('default', ['webserver', 'script', 'auto'])
+
+// gulp.task('default', ['webserver'], () => {
+//     // gulp.watch('./src/ES6/*.js', ['minifyjs'])
+//     gulp.watch('js/*.js', ['script'])
+// });
