@@ -1,1 +1,0 @@
-console.log("我是a模块"),window.even={};

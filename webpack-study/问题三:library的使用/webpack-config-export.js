@@ -1,11 +1,11 @@
 let path = require('path')
 module.exports = {
-    mode: 'development',
+    mode: 'none',
     entry: {
         a: './src/a.js',
     },
     output: {
-        filename: 'mode-development.js',
+        filename: 'export.js',
         path: path.join(__dirname,'./dist'),
         library: 'even',
         libraryTarget: 'window',

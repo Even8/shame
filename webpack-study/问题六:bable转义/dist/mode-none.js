@@ -1,0 +1,20 @@
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ([
+/* 0 */
+/***/ (() => {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: Cannot find module '@babel/preset-env'\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:582:15)\n    at resolve (/Users/even/.nvm/versions/node/v10.15.3/lib/node_modules/webpack-cli/node_modules/_v8-compile-cache@2.3.0@v8-compile-cache/v8-compile-cache.js:164:23)\n    at resolveStandardizedName (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/@babel/core/lib/config/files/plugins.js:111:7)\n    at resolvePreset (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/@babel/core/lib/config/files/plugins.js:59:10)\n    at loadPreset (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/@babel/core/lib/config/files/plugins.js:78:20)\n    at loadPreset.next (<anonymous>)\n    at createDescriptor (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/@babel/core/lib/config/config-descriptors.js:187:16)\n    at createDescriptor.next (<anonymous>)\n    at step (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:261:32)\n    at evaluateAsync (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:291:5)\n    at items.forEach (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:44:11)\n    at Array.forEach (<anonymous>)\n    at Function.async (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:43:15)\n    at Function.all (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:216:13)\n    at Generator.next (<anonymous>)\n    at createDescriptors (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/@babel/core/lib/config/config-descriptors.js:142:41)\n    at createDescriptors.next (<anonymous>)\n    at createPresetDescriptors (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/@babel/core/lib/config/config-descriptors.js:134:17)\n    at createPresetDescriptors.next (<anonymous>)\n    at /Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/@babel/core/lib/config/config-descriptors.js:86:32\n    at Generator.next (<anonymous>)\n    at Function.<anonymous> (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/@babel/core/lib/gensync-utils/async.js:25:3)\n    at Generator.next (<anonymous>)\n    at step (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:269:25)\n    at evaluateAsync (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:291:5)\n    at Function.errback (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:113:7)\n    at errback (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/@babel/core/lib/gensync-utils/async.js:72:18)\n    at async (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:188:31)\n    at onFirstPause (/Users/even/Even/continue/packagingTools/webpack-study/问题六:bable转义/node_modules/gensync/index.js:216:13)\n    at Generator.next (<anonymous>)");
+
+/***/ })
+/******/ 	]);
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module doesn't tell about it's top-level declarations so it can't be inlined
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__[0]();
+/******/ 	window.even = __webpack_exports__;
+/******/ 	
+/******/ })()
+;
