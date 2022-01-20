@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
     mode: 'none',
     entry: {
-        main: './src/a.js',
+        main: path.join(__dirname, './src/a.js')
     },
     output: {
         filename: 'a.[chunkhash].js',
