@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no,width=device-width,viewport-fit=cover" />
+    <meta name="format-detection" content="telephone=no,email=no,adress=no" />
+    <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <title></title>
+    <style type="text/css">
+    	.cont{
+	    	position: absolute; 
+    		top:0;
+	    	width: 100%;
+	    	height:100%;
+	    	overflow: hidden;
+	    	background-color: #ffffff
+    	}
+    	body .scroll{
+    		overflow: auto;
+    		overflow-y: scroll;
+    		overflow-x: hidden;
+			-webkit-overflow-scrolling: touch;
+    	}
+    	.main-cont{
+	    	position: absolute;
+		    width: 100%;
+		    height: 213.6vw;
+		    background-image: url(images/bg.jpg);
+		    background-size: 100% 100%;
+		}
+		.keyelcont{
+			margin:0 auto;
+			width: 100%;
+			height:190vw;
+			position: relative;
+		}	
+		
+		.actrulebtn{
+			position: absolute;
+			top: 8vw;
+    		right: 0;
+			width: 23.2vw;
+			height:7.46vw;
+			background: url(images/actrulebtn.png);
+    		background-size:100% 100%;
+		}
+
+		.grabbtn{
+			position: absolute;
+		    width:100%;
+		    top: 158.8vw;  
+		    text-align: center; 
+		}
+
+		.grab-content{
+			width: 100%;
+		}
+
+		.grab-div,.check-div{
+    		display: inline-block;
+		}
+		.grab-div {
+			margin-right: 5vw;
+		}
+		
+		.grab-div div,.check-div div{
+			width: 100%
+		}
+
+		.grabbtn .grab{
+			background: url(images/img-grab.png);
+			height: 10.66vw;
+		    width: 41.33vw;
+		    background-size:100% 100%;
+		    margin-right: 3vw;
+		    display: none
+		}
+
+		.grabbtn .grab2{
+			background: url(images/img-grab2.png);
+		    height: 10.66vw;
+		    width: 41.33vw;
+		    background-size:100% 100%;		    
+		    display: none
+		}
+
+		.grabbtn .check{
+			background: url(images/img-check.png);
+		    height: 10.66vw;
+		    width: 41.33vw;
+		    background-size:100% 100%;
+		    display: inline-block;
+		}
+
+		.grabbtn .recordsbtn{
+			width: 24.4vw;
+		    height: 7.46vw;
+			background: url(images/recordsbtn.png);
+    		background-size:100% 100%;
+    		margin: 6.4vw auto 0 auto
+		}
+
+		@supports (bottom:constant(safe-area-inset-bottom)){
+			body{
+				height:calc(100% + constant(safe-area-inset-bottom));
+			}
+			.cont{
+				height:calc(100% + constant(safe-area-inset-bottom));
+			}
+		}
+		@supports (bottom:env(safe-area-inset-bottom)){
+			body{
+				height:calc(100% + env(safe-area-inset-bottom));
+			}
+			.cont{
+				height:calc(100% + env(safe-area-inset-bottom));
+			}
+		} 
+    </style>
+</head>
+<body>
+	<div class="cont">
+		<div class="main-cont">
+			<div class="keyelcont">
+
+				<div class="actrulebtn"></div>
+				<div class="grabbtn">
+					<div class="grab-content">
+						<div class="grab-div">
+							<div class="grab"></div>
+							<div class="grab2"></div>
+						</div>
+						<div class="check-div"><div class="check"></div></div>
+					</div>
+					
+					<div class="recordsbtn"></div>
+				</div>	
+
+			</div>
+		</div>
+	</div>
+	<script src="./assets/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/baseContent.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/common.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/request.js" type="text/javascript" charset="utf-8"></script>
+	<script src="./js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
