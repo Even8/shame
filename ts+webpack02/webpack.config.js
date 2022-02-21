@@ -5,14 +5,19 @@ let HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
-const webpack = require('webpack')
+const fs = require('fs');
+
 module.exports = {
 	mode: 'none',
-	// entry:['./src/ts/a.js'],
+	// 需要import引入
 	entry: {
 		a: './src/ts/a.ts',
 		b: './src/ts/b.js',
 	},
+	// 不需要import引入
+	// entry: {
+  //   ...entryPath(__dirname+'/src/ts')
+	// },
 	output: {
 		filename: 'js/[name].js',
 		path: path.join(__dirname, 'dist'),
@@ -125,4 +130,14 @@ module.exports = {
       }
     }
   },
+}
+
+// 读取入口文件
+function entryPath(currentDirPath) {
+  let entryObj = {};
+  let arrPath = fs.readdirSync(currentDirPath)
+  arrPath.forEach((item) => {
+    entryObj[item.split('.')[0]] = path.resolve(__dirname, './src/ts/'+item)
+  })
+  return entryObj;
 }
