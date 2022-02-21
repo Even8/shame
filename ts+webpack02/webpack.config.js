@@ -20,8 +20,8 @@ module.exports = {
 	// },
 	output: {
 		filename: 'js/[name].js',
-		path: path.join(__dirname, 'dist'),
-		publicPath: './dist',
+		path: path.join(__dirname, './dist'),
+		// publicPath: './dist',
 	},
 	module: {
 		rules: [
@@ -106,7 +106,7 @@ module.exports = {
 			template: 'index.html'	
 		}),
 		new MiniCssExtractPlugin({
-			filename: './css/base.css',
+			filename: 'css/base.css',
 			chunkFilename: '[id].css',
 		}),
 		new CopyPlugin({
