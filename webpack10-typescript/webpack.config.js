@@ -14,8 +14,9 @@ module.exports = {
 		b: './src/ts/b.js',
 	},
 	output: {
-		filename: '[name].js',
-		path: path.join(__dirname, 'dist')
+		filename: 'js/[name].js',
+		path: path.join(__dirname, 'dist'),
+		publicPath: './dist',
 	},
 	module: {
 		rules: [
@@ -87,7 +88,14 @@ module.exports = {
 			// }	
 		],
 	},
+	resolve: {
+    extensions: [ '.tsx', '.ts', '.js' ],
+    alias: {
+      '@': resolve( '../src' )
+    }
+  },
 	plugins: [
+		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
 			title: 'webpack10',
 			template: 'index.html'	
@@ -96,7 +104,6 @@ module.exports = {
 			filename: './css/base.css',
 			chunkFilename: '[id].css',
 		}),
-		new CleanWebpackPlugin(),
 		new CopyPlugin({
       patterns: [
 				{	
