@@ -8,11 +8,13 @@
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 __webpack_require__(1);
 var $ = __webpack_require__(2);
+var c_1 = __webpack_require__(3);
 console.log(11);
 var a = 12;
 $('#phone').on('click', function () {
     console.log("sdf");
 });
+console.log(c_1.name);
 
 
 /***/ }),
@@ -21,6 +23,17 @@ $('#phone').on('click', function () {
 
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
+
+
+/***/ }),
+/* 2 */,
+/* 3 */
+/***/ ((__unused_webpack_module, exports) => {
+
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.name = void 0;
+exports.name = 'Even11111111111';
 
 
 /***/ })
