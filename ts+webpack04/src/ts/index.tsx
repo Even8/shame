@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React from "react";
 import { render } from 'react-dom';
 import '../css/search.less';
 const logo = require('../images/logo.png');
@@ -7,10 +7,10 @@ console.log("运行");
 
 
 const App = () => {
-	let [show,setShow] = useState<boolean>(false)
+	// let [show,setShow] = useState<boolean>(false)
 	return (
 		<div className="hello">
-			{show?'nihao':'buhao'}
+			{/* {show?'nihao':'buhao'} */}
 			<img src={logo}></img>
 		</div>
 	)
