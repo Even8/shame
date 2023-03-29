@@ -1,0 +1,68 @@
+.userBaseInfo .Third_title {
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 20px;
+}
+.userBaseInfo .text_20 {
+  width: 42px;
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+  margin: 0px 0 0 8px;
+}
+.userBaseInfo .ant-form-vertical .ant-form-item-label,
+.userBaseInfo .ant-col-24.ant-form-item-label,
+.userBaseInfo .ant-col-xl-24.ant-form-item-label {
+  padding: 0 0 5px;
+}
+
+.operationalButton .text-wrapper_4 {
+  border-radius: 2px;
+  height: 32px;
+  border: 1px solid #3095b4;
+  margin-left: 10px;
+  min-width: 86px;
+  padding: 0 9px 0 9px;
+}
+.operationalButton .text_15 {
+  height: 20px;
+  overflow-wrap: break-word;
+  color: #3095b4;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: NaN;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 20px;
+}
+.operationalButton .text-wrapper_5 {
+  background-color: #3095b4;
+  border-radius: 2px;
+  height: 32px;
+  margin-left: 10px;
+  min-width: 86px;
+  padding: 0 10px 0 10px;
+}
+.operationalButton .text_16 {
+  height: 20px;
+  overflow-wrap: break-word;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 20px;
+}
+

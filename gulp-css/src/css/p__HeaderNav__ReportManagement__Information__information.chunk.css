@@ -1,0 +1,17 @@
+.information {
+  background-color: #ffffff;
+}
+.information .ant-form-item {
+  margin-bottom: 0 !important;
+}
+.information .text_13 {
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+}
+

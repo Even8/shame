@@ -1,0 +1,264 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+.ant-divider {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: 'tnum', "tnum";
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+.ant-divider-vertical {
+  position: relative;
+  top: -0.06em;
+  display: inline-block;
+  height: 0.9em;
+  margin: 0 8px;
+  vertical-align: middle;
+  border-top: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.06);
+}
+.ant-divider-horizontal {
+  display: flex;
+  clear: both;
+  width: 100%;
+  min-width: 100%;
+  margin: 24px 0;
+}
+.ant-divider-horizontal.ant-divider-with-text {
+  display: flex;
+  align-items: center;
+  margin: 16px 0;
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+  font-size: 16px;
+  white-space: nowrap;
+  text-align: center;
+  border-top: 0;
+  border-top-color: rgba(0, 0, 0, 0.06);
+}
+.ant-divider-horizontal.ant-divider-with-text::before,
+.ant-divider-horizontal.ant-divider-with-text::after {
+  position: relative;
+  width: 50%;
+  border-top: 1px solid transparent;
+  border-top-color: inherit;
+  border-bottom: 0;
+  transform: translateY(50%);
+  content: '';
+}
+.ant-divider-horizontal.ant-divider-with-text-left::before {
+  width: 5%;
+}
+.ant-divider-horizontal.ant-divider-with-text-left::after {
+  width: 95%;
+}
+.ant-divider-horizontal.ant-divider-with-text-right::before {
+  width: 95%;
+}
+.ant-divider-horizontal.ant-divider-with-text-right::after {
+  width: 5%;
+}
+.ant-divider-inner-text {
+  display: inline-block;
+  padding: 0 1em;
+}
+.ant-divider-dashed {
+  background: none;
+  border-color: rgba(0, 0, 0, 0.06);
+  border-style: dashed;
+  border-width: 1px 0 0;
+}
+.ant-divider-horizontal.ant-divider-with-text.ant-divider-dashed::before,
+.ant-divider-horizontal.ant-divider-with-text.ant-divider-dashed::after {
+  border-style: dashed none none;
+}
+.ant-divider-vertical.ant-divider-dashed {
+  border-width: 0 0 0 1px;
+}
+.ant-divider-plain.ant-divider-with-text {
+  color: rgba(0, 0, 0, 0.85);
+  font-weight: normal;
+  font-size: 14px;
+}
+.ant-divider-horizontal.ant-divider-with-text-left.ant-divider-no-default-orientation-margin-left::before {
+  width: 0;
+}
+.ant-divider-horizontal.ant-divider-with-text-left.ant-divider-no-default-orientation-margin-left::after {
+  width: 100%;
+}
+.ant-divider-horizontal.ant-divider-with-text-left.ant-divider-no-default-orientation-margin-left .ant-divider-inner-text {
+  padding-left: 0;
+}
+.ant-divider-horizontal.ant-divider-with-text-right.ant-divider-no-default-orientation-margin-right::before {
+  width: 100%;
+}
+.ant-divider-horizontal.ant-divider-with-text-right.ant-divider-no-default-orientation-margin-right::after {
+  width: 0;
+}
+.ant-divider-horizontal.ant-divider-with-text-right.ant-divider-no-default-orientation-margin-right .ant-divider-inner-text {
+  padding-right: 0;
+}
+.ant-divider-rtl {
+  direction: rtl;
+}
+.ant-divider-rtl.ant-divider-horizontal.ant-divider-with-text-left::before {
+  width: 95%;
+}
+.ant-divider-rtl.ant-divider-horizontal.ant-divider-with-text-left::after {
+  width: 5%;
+}
+.ant-divider-rtl.ant-divider-horizontal.ant-divider-with-text-right::before {
+  width: 5%;
+}
+.ant-divider-rtl.ant-divider-horizontal.ant-divider-with-text-right::after {
+  width: 95%;
+}
+
+.reportManagement .TP_header .title {
+  height: 33px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 24px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 33px;
+}
+.reportManagement .TP_header .sub_title {
+  height: 20px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 20px;
+  margin: 8px 0 0px 0px;
+}
+.reportManagement .TP_header .line {
+  width: 100%;
+  height: 1px;
+  border: solid 1px rgba(0, 0, 0, 0.09);
+  margin: 24px 0 40px 0;
+}
+.reportManagement .Third_title {
+  width: 56px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 16px;
+  font-family: PingFangSC-Medium;
+  font-weight: 500;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+}
+.reportManagement .TP_btn .text-wrapper_6 {
+  background-color: #3095b4;
+  border-radius: 2px;
+  height: 32px;
+  margin-left: 10px;
+  min-width: 86px;
+  padding: 0 10px 0 10px;
+}
+.reportManagement .TP_btn .text_17 {
+  height: 20px;
+  overflow-wrap: break-word;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 20px;
+}
+.reportManagement .ant-form-vertical .ant-form-item-label,
+.reportManagement .ant-col-24.ant-form-item-label,
+.reportManagement .ant-col-xl-24.ant-form-item-label {
+  padding: 0 0 5px;
+}
+.statusTooltip {
+  color: black;
+}
+.statusTooltip .title {
+  font-size: 16px;
+}
+.statusTooltip .currentIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #3095b4;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  z-index: 10;
+}
+.statusTooltip .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #3095b4;
+  background-color: white;
+  color: #3095b4;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  z-index: 10;
+}
+.statusTooltip .statusText {
+  font-size: 14px;
+}
+
+.operationalButton .text-wrapper_4 {
+  border-radius: 2px;
+  height: 32px;
+  border: 1px solid #3095b4;
+  margin-left: 10px;
+  min-width: 86px;
+  padding: 0 9px 0 9px;
+}
+.operationalButton .text_15 {
+  height: 20px;
+  overflow-wrap: break-word;
+  color: #3095b4;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: NaN;
+  text-align: right;
+  white-space: nowrap;
+  line-height: 20px;
+}
+.operationalButton .text-wrapper_5 {
+  background-color: #3095b4;
+  border-radius: 2px;
+  height: 32px;
+  margin-left: 10px;
+  min-width: 86px;
+  padding: 0 10px 0 10px;
+}
+.operationalButton .text_16 {
+  height: 20px;
+  overflow-wrap: break-word;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: PingFangSC-Regular;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 20px;
+}
+
